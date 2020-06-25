@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background: #f1f2f6;
+    color: #353b3c;
+    font-family: 'Work Sans', sans-serif;
+}
+.container {
+    display: grid;
+    grid-template: 100px 1fr 100px / 1fr 1fr;
+    grid-gap: 10px;
+    height: 100vh;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-gap: 10px;
+    height: 70px;
+    grid-template-areas: "header__menu header__username";
+    justify-content: center;
+}
+.header__menu {
+    margin-left: 80px;
+    list-style: none;
+    grid-area: header__menu;
+    display: flex;
+    padding-inline-start: 0;
+    margin-bottom: 20px;
+}
+.header__username {
+    grid-area: header__username;
+    justify-self: end;
+    align-self: flex-end;
+    padding-bottom: 15px;
+    margin-right: 80px;
+
+}
+.header__menu li {
+    padding: 10px 30px;
+    border-bottom: 2px solid #eeaac4;
+}
+.header__menu li:hover {
+    border-bottom: 3px solid #d73371;
+}
+
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-areas: "main__container image"
+                         "main__container image";
+    justify-content: center;
+    align-items: center;
+}
+.main__container {
+    grid-area: main__container;
+    padding: 50px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__title {
+    color: #7d8a8c;
+    font-size: 50px;
+    font-weight: 500;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+.main__content {
+    color: #7d8a8c;
+    font-size: 36px;
+    margin: 0;
+}
+.main__button {
+    width: 200px;
+    font-family: 'Work Sans', sans-serif;
+    color: #f1f2f6;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    background: #d73371;
+    border: none;
+    border-radius: 10px;
+}
+.image {
+    grid-area: image;
+}
+.footer {
+    color: #7d8a8c;
+    grid-area: footer;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+a {
+    color: #353b3c;
+    text-decoration: none;
+}
+a:hover {
+    color: #d73371;
+    font-weight: bold;
+}
+.cloud {
+    color: #353b3c;
+    font-weight: 900;
+}
+.maxime {
+    color: #d73371;
+}
+.username {
+    color: #7d8a8c;
+}
+.juliodev {
+    font-weight: bold;
+}
